@@ -39,11 +39,11 @@ interface SupabaseConfig {
 
 function getConfig(): SupabaseConfig {
   const url = process.env.SUPABASE_URL;
-  const anonKey = process.env.SUPABASE_ANON_KEY;
+  const anonKey = process.env.SUPABASE_PUBLISHABLE_KEY;
 
   if (!url || !anonKey) {
     throw new AuthApiError(
-      "Faltan SUPABASE_URL o SUPABASE_ANON_KEY en las variables de entorno.",
+      "Faltan SUPABASE_URL o SUPABASE_PUBLISHABLE_KEY en las variables de entorno.",
       500,
       "missing_config",
     );
