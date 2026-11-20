@@ -1,0 +1,164 @@
+/* ============================================================
+   Paleta de colores de la aplicación
+   ------------------------------------------------------------
+   Este es el único archivo que debes editar para cambiar los
+   colores del frontend.
+
+   - Las escalas (--palette-*) son los colores base disponibles.
+   - Los tokens (--app-*) deciden qué color de cada escala se usa
+     en cada parte de la interfaz. Los componentes solo consumen
+     estos tokens, nunca colores literales.
+   ============================================================ */
+
+:root {
+  /* Neutra */
+  --palette-neutral-50: #fafafa;
+  --palette-neutral-100: #f4f4f5;
+  --palette-neutral-200: #e4e4e7;
+  --palette-neutral-300: #d4d4d8;
+  --palette-neutral-400: #a1a1aa;
+  --palette-neutral-500: #71717a;
+  --palette-neutral-600: #52525b;
+  --palette-neutral-700: #3f3f46;
+  --palette-neutral-800: #27272a;
+  --palette-neutral-900: #18181b;
+  --palette-neutral-950: #09090b;
+
+  /* Marca */
+  --palette-brand-50: #eff6ff;
+  --palette-brand-100: #dbeafe;
+  --palette-brand-200: #bfdbfe;
+  --palette-brand-300: #93c5fd;
+  --palette-brand-400: #60a5fa;
+  --palette-brand-500: #3b82f6;
+  --palette-brand-600: #2563eb;
+  --palette-brand-700: #1d4ed8;
+  --palette-brand-800: #1e40af;
+  --palette-brand-900: #1e3a8a;
+  --palette-brand-950: #172554;
+
+  /* Éxito */
+  --palette-success-50: #ecfdf5;
+  --palette-success-100: #d1fae5;
+  --palette-success-200: #a7f3d0;
+  --palette-success-300: #6ee7b7;
+  --palette-success-400: #34d399;
+  --palette-success-500: #10b981;
+  --palette-success-600: #059669;
+  --palette-success-700: #047857;
+  --palette-success-800: #065f46;
+  --palette-success-900: #064e3b;
+  --palette-success-950: #022c22;
+
+  /* Advertencia */
+  --palette-warning-50: #fffbeb;
+  --palette-warning-100: #fef3c7;
+  --palette-warning-200: #fde68a;
+  --palette-warning-300: #fcd34d;
+  --palette-warning-400: #fbbf24;
+  --palette-warning-500: #f59e0b;
+  --palette-warning-600: #d97706;
+  --palette-warning-700: #b45309;
+  --palette-warning-800: #92400e;
+  --palette-warning-900: #78350f;
+  --palette-warning-950: #451a03;
+
+  /* Peligro */
+  --palette-danger-50: #fef2f2;
+  --palette-danger-100: #fee2e2;
+  --palette-danger-200: #fecaca;
+  --palette-danger-300: #fca5a5;
+  --palette-danger-400: #f87171;
+  --palette-danger-500: #ef4444;
+  --palette-danger-600: #dc2626;
+  --palette-danger-700: #b91c1c;
+  --palette-danger-800: #991b1b;
+  --palette-danger-900: #7f1d1d;
+  --palette-danger-950: #450a0a;
+}
+
+/* Tokens semánticos: tema claro */
+:root {
+  --app-bg: var(--palette-neutral-50);
+  --app-surface: #ffffff;
+  --app-elevated: #ffffff;
+  --app-elevated-hover: var(--palette-neutral-50);
+  --app-fg: var(--palette-neutral-900);
+  --app-muted: var(--palette-neutral-500);
+  --app-subtle: var(--palette-neutral-400);
+  --app-border: var(--palette-neutral-200);
+  --app-border-strong: var(--palette-neutral-300);
+
+  --app-primary: var(--palette-brand-600);
+  --app-primary-hover: var(--palette-brand-700);
+  --app-primary-fg: #ffffff;
+  --app-ring: var(--palette-brand-600);
+
+  --app-success: var(--palette-success-700);
+  --app-success-surface: var(--palette-success-50);
+  --app-success-border: var(--palette-success-200);
+
+  --app-warning: var(--palette-warning-700);
+  --app-warning-surface: var(--palette-warning-50);
+  --app-warning-border: var(--palette-warning-200);
+
+  --app-danger: var(--palette-danger-700);
+  --app-danger-surface: var(--palette-danger-50);
+  --app-danger-border: var(--palette-danger-200);
+}
+
+/* Tokens semánticos: tema oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg: #000000;
+    --app-surface: var(--palette-neutral-950);
+    --app-elevated: var(--palette-neutral-900);
+    --app-elevated-hover: var(--palette-neutral-800);
+    --app-fg: var(--palette-neutral-50);
+    --app-muted: var(--palette-neutral-400);
+    --app-subtle: var(--palette-neutral-500);
+    --app-border: var(--palette-neutral-800);
+    --app-border-strong: var(--palette-neutral-700);
+
+    --app-primary: var(--palette-brand-500);
+    --app-primary-hover: var(--palette-brand-400);
+    --app-primary-fg: var(--palette-neutral-950);
+    --app-ring: var(--palette-brand-400);
+
+    --app-success: var(--palette-success-300);
+    --app-success-surface: color-mix(
+      in oklab,
+      var(--palette-success-950) 60%,
+      transparent
+    );
+    --app-success-border: color-mix(
+      in oklab,
+      var(--palette-success-900) 50%,
+      transparent
+    );
+
+    --app-warning: var(--palette-warning-300);
+    --app-warning-surface: color-mix(
+      in oklab,
+      var(--palette-warning-950) 60%,
+      transparent
+    );
+    --app-warning-border: color-mix(
+      in oklab,
+      var(--palette-warning-900) 50%,
+      transparent
+    );
+
+    --app-danger: var(--palette-danger-300);
+    --app-danger-surface: color-mix(
+      in oklab,
+      var(--palette-danger-950) 60%,
+      transparent
+    );
+    --app-danger-border: color-mix(
+      in oklab,
+      var(--palette-danger-900) 50%,
+      transparent
+    );
+  }
+}

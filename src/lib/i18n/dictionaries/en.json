@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "title": "Auth App",
+    "titleTemplate": "%s | Auth App",
+    "description": "App with Supabase authentication"
+  },
+  "common": {
+    "brand": "Auth App",
+    "language": "Language",
+    "or": "or",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "passwordPlaceholder": "••••••••",
+    "minPasswordPlaceholder": "At least 6 characters",
+    "repeatPasswordPlaceholder": "Repeat your password"
+  },
+  "authLayout": {
+    "subtitle": "Manage your account"
+  },
+  "authProvider": {
+    "loading": "Loading session..."
+  },
+  "home": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signingOut": "Signing out...",
+    "publicTitle": "Welcome",
+    "publicMessage": "You can browse without signing in. Access your account to see your session details.",
+    "publicHint": "Sign in to continue.",
+    "greeting": "Hello, {email}",
+    "defaultUser": "user",
+    "signedIn": "You are signed in successfully.",
+    "sessionActive": "Active session",
+    "labels": {
+      "id": "ID",
+      "email": "Email",
+      "provider": "Provider",
+      "role": "Role"
+    }
+  },
+  "login": {
+    "metadataTitle": "Sign in",
+    "loading": "Loading...",
+    "title": "Sign in",
+    "subtitle": "Enter your credentials to continue.",
+    "forgotPassword": "Forgot it?",
+    "submit": "Sign in",
+    "submitting": "Signing in...",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "genericError": "Could not sign in."
+  },
+  "register": {
+    "metadataTitle": "Create account",
+    "title": "Create account",
+    "subtitle": "Sign up to start using the app.",
+    "passwordMismatch": "Passwords do not match.",
+    "emailConfirmation": "We sent you an email to confirm your account.",
+    "submit": "Create account",
+    "submitting": "Creating account...",
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in",
+    "genericError": "Could not create the account."
+  },
+  "forgotPassword": {
+    "metadataTitle": "Recover password",
+    "title": "Recover password",
+    "subtitle": "We'll send you a link to reset it.",
+    "success": "If the email exists, you'll receive a link to reset your password.",
+    "submit": "Send link",
+    "submitting": "Sending...",
+    "backToLogin": "Back to sign in",
+    "genericError": "Could not send the email."
+  },
+  "resetPassword": {
+    "metadataTitle": "New password",
+    "checking": "Verifying link...",
+    "invalidTitle": "Invalid link",
+    "invalidMessage": "The link has expired or is invalid. Request a new one.",
+    "requestAnother": "Request another link",
+    "title": "New password",
+    "subtitle": "Choose a new password for your account.",
+    "passwordMismatch": "Passwords do not match.",
+    "success": "Password updated. Redirecting...",
+    "submit": "Save password",
+    "submitting": "Saving...",
+    "genericError": "Could not update the password."
+  },
+  "oauth": {
+    "google": "Continue with Google",
+    "github": "Continue with GitHub"
+  }
+}
